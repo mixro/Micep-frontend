@@ -1,0 +1,9 @@
+.layout-container {
+    background: var(--primary-background);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.layout-body {
+    padding: 0;  
+}

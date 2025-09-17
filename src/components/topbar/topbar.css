@@ -1,0 +1,127 @@
+.topbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 2%;
+    background: var(--secondary-background);
+}
+
+  /*----------------- topbar left -------------------*/
+.topbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.topbar-left p {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.topbar-left p span {
+    color: var(--orange-soft);
+}
+
+.registered {
+    position: absolute;
+    top: -5px;
+    right: -23px;
+}
+
+
+  /*----------------- topbar right -------------------*/
+.topbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.topbar-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.topbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.topbar-link:hover {
+    color: var(--orange-soft);
+    cursor: pointer;
+}
+
+.topbar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-button button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background: var(--soft-black);
+    color: var(--primary-background);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.topbar-button button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+
+  /*----------------- topbar box section -------------------*/
+.topbar-box {
+    padding-top: 20px;
+}
+
+.box-links {
+    padding: 10px 16px 20px;
+}
+
+.box-links p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+    /*--------------MEDIA QUERY AND SCREEN--------------*/
+@media screen and (max-width: 770px){
+    .topbar-container {
+        padding: 25px 4%;
+    }
+
+    .topbar-links, .topbar-button {
+        display: none;
+    }
+
+    .topbar-left p {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .registered {
+        top: -6px;
+        right: -20px;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
