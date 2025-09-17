@@ -6,7 +6,7 @@
   /*----------------- hero -------------------*/
 .hero {
     height: calc(100vh);
-    max-height: 600px;
+    max-height: 615px;
     padding: 5% 2% 4%;
     background-position: center;
     background-size: cover;
@@ -75,7 +75,7 @@
    /*--------------MEDIA QUERY AND SCREEN--------------*/
 @media screen and (max-width: 770px){
     .hero {
-        height: calc(100vh - 160px);
+        height: calc(100vh - 140px);
         max-height: none;
         padding-top: 20%;
         background-image: linear-gradient(#dfdfdf, 60%, #ebebebef, 80%, #bdbdbdcb), url('/public/assets/background.jpg');
@@ -108,7 +108,7 @@
 
     .hero-desc p {
         font-size: 17px;
-        color: rgb(70, 70, 70);
+        color: #464646;
     }
 
     .hero-button {
@@ -125,7 +125,7 @@
     }
 
     .clip-top-circle {
-        bottom: -230px;
+        bottom: -220px;
         width: 120%;
         left: -10%;
         height: 18rem;

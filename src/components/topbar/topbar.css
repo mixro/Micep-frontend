@@ -89,14 +89,26 @@
 }
 
 .box-links {
-    padding: 10px 16px 20px;
+    padding: 10px 0 20px;
 }
 
 .box-links p {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
+    margin: 0 16px;
 }
 
+.drawer-footer {
+    font-weight: 600;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer-footer p span {
+    color: var(--orange-soft);
+}
 
 
     /*--------------MEDIA QUERY AND SCREEN--------------*/

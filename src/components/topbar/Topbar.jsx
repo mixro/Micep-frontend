@@ -37,7 +37,7 @@ const Topbar = () => {
   return (
     <div className="topbar-container">
         <div className="topbar-left">
-            <p>Micep<span>DEV</span></p>
+            <p>MICEP<span>DEV</span></p>
             <p className="registered">®</p>
         </div>
 
@@ -53,7 +53,10 @@ const Topbar = () => {
                 <button>Schedule a Call</button>
             </div>
             <div className="menu-icon">
-                {open ? <Close sx={{fontSize: 28}} onClick={toggleDrawer(false)} /> : <Menu sx={{fontSize: 28}} onClick={toggleDrawer(true)} />}
+                {open 
+                    ? <Close sx={{fontSize: 28}} onClick={toggleDrawer(false)} /> 
+                    : <Menu sx={{fontSize: 28}} onClick={toggleDrawer(true)} />
+                }
                 <Drawer
                     variant="persistent"
                     anchor="right"
@@ -64,6 +67,9 @@ const Topbar = () => {
                             top: '80px',     
                             height: 'calc(100vh - 80px)', 
                             background: '#F6F7F8',
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "space-between"
                         },
                     }}
                     ModalProps={{
@@ -71,6 +77,9 @@ const Topbar = () => {
                     }}
                 >
                     {list()}
+                    <div className="drawer-footer">
+                        <p>© 2025. <span>MICEP TECH</span></p>
+                    </div>
                 </Drawer>
             </div>
         </div>
