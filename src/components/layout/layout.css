@@ -1,5 +1,5 @@
 .layout-container {
-    background: var(--primary-background);
+    background: var(--secondary-background);
     max-width: 100vw;
     overflow-x: hidden;
 }

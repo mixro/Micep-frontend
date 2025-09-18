@@ -12,7 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    background-image: linear-gradient(90deg, #f5f5f5, 60%, #ffffffd5, 80%, #ffffff00), url('/public/assets/background.jpg');
+    background-image: linear-gradient(90deg, #f5f5f5, 60%, #ffffffd5, 80%, #ffffff00), url('/assets/background.jpg');
 }
 
 .hero-tagline {
@@ -64,21 +64,79 @@
 
   /*----------------- home companies -------------------*/
 .home-companies {
-    padding-top: 4%;
+    padding: 2%;
     min-height: 200px;
     z-index: 10;
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     background: var(--secondary-background);
 }
 
+.home-companies-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.home-companies-wrapper h2 {
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.orange-dot {
+    color: var(--orange-soft);
+    font-size: inherit;
+}
+
+.companies-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.company-logo svg {
+    fill: var(--text-color);
+}
+
+.company-logo p {
+    margin-top: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--orange-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.company-logo p svg {
+    fill: var(--orange-soft);
+}
    
    /*--------------MEDIA QUERY AND SCREEN--------------*/
 @media screen and (max-width: 770px){
+
+    /*----------------- hero -------------------*/
     .hero {
         height: calc(100vh - 140px);
         max-height: none;
         padding-top: 20%;
-        background-image: linear-gradient(#dfdfdf, 60%, #ebebebef, 80%, #bdbdbdcb), url('/public/assets/background.jpg');
+        background-image: linear-gradient(#dfdfdf, 60%, #ebebebef, 80%, #bdbdbdce), url('/assets/background.jpg');
     }
 
     .hero-tagline {
@@ -100,8 +158,9 @@
 
     .hero-desc {
         text-align: center;
-        padding: 30px 5% 0;
+        padding: 30px 4% 0;
         display: flex;
+        font-weight: 500;
         align-items: center;
         justify-content: center;
     }
@@ -130,5 +189,40 @@
         left: -10%;
         height: 18rem;
         clip-path: ellipse(60% 45% at 50% 50%);
+    }
+
+    
+    /*----------------- home companies -------------------*/
+    .home-companies-wrapper {
+        width: 95%;
+        padding: 4% 0 5%;
+    }
+
+    .home-companies-wrapper h2 {
+        font-size: 1.75rem;
+        line-height: 40px;
+    }
+
+    .companies-containers {
+        justify-content: space-between;
+    }
+
+    .company-logo {
+        flex-basis: 28%;
+        margin-bottom: 35px;
+    }
+
+    .company-logo svg {
+        max-width: 100%;
+    }
+
+    .company-logo p {
+        font-size: 13px;
+        display: -webkit-box;          
+        -webkit-box-orient: vertical;  
+        -webkit-line-clamp: 1;  
+        line-clamp: 1;       
+        overflow: hidden;              
+        text-overflow: ellipsis;
     }
 }

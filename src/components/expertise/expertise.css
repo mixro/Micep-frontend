@@ -1,0 +1,87 @@
+.expertise {
+    padding: 2% 6%;
+}
+
+  /*----------------- expertise top -------------------*/
+.expertise-header {
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.expertise-header h2 {
+    font-size: 35px;
+    font-weight: 600;
+    width: 40%;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+.expertise-header-link {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 0 30px 15px 0;
+    border-bottom: 2px solid rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+.expertse-header p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.expertise-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.expertise-item {
+    flex-basis: 31%;
+    padding-bottom: 50px;
+}
+
+.expertise-icon {
+    padding-bottom: 10px;
+}
+
+.expertise-item h3 {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .expertise {
+        padding-top: 40px;
+    }
+
+    /*----------------- expertise top -------------------*/
+    .expertise-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .expertise-header h2 {
+        font-size: 25px;
+        width: 80%;
+        margin-bottom: 60px;
+        line-height: normal;
+    }
+
+    .expertise-header-link {
+        padding: 0 20px 10px 0;
+    }
+
+    .expertise-item {
+        flex-basis: 100%;
+    }
+}

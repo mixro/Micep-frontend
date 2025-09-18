@@ -58,7 +58,7 @@ const Topbar = () => {
                     : <Menu sx={{fontSize: 28}} onClick={toggleDrawer(true)} />
                 }
                 <Drawer
-                    variant="persistent"
+                    variant="temporary"
                     anchor="right"
                     open={open}
                     onClose={toggleDrawer(false)}

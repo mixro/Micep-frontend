@@ -89,7 +89,7 @@
 }
 
 .box-links {
-    padding: 10px 0 20px;
+    padding: 10px 0 30px;
 }
 
 .box-links p {
@@ -100,7 +100,7 @@
 
 .drawer-footer {
     font-weight: 600;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +115,8 @@
 @media screen and (max-width: 770px){
     .topbar-container {
         padding: 25px 4%;
+        z-index: 1301;
+        position: relative;
     }
 
     .topbar-links, .topbar-button {
