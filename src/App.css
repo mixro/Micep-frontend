@@ -1,9 +1,13 @@
 :root {
-  --primary-background: #F6F7F8;
+  --primary-background: #f1f1f1;
   --secondary-background: #fff;
+  --tertiary-background: #D9DCDF;
   --text-color: #52606D;
+  --gray-text: #5a5a5a;
+  --gray-soft: #9e9e9e;
   --soft-black: #111111;
   --green-accent: #4CAF50;
+  --green-deep: #107C5A;
   --orange-soft: #fa521f;
   --orange-accent: #FF9800;
   --blue-cta: #2196F3;
