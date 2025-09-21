@@ -31,7 +31,7 @@ const Process = () => {
                     <div className="process-step">
                         <div className="process-connector"></div>
                         <div className="step-icon">
-                            <Call sx={{fontSize: 26}} />
+                            <Call sx={{fontSize: {xs: 22, sm: 26}}} />
                         </div>
                         <div className="step-details">
                             <span>STEP 1</span>
@@ -42,7 +42,7 @@ const Process = () => {
                     <div className="process-step">
                         <div className="process-connector"></div>
                         <div className="step-icon">
-                            <GroupAdd sx={{fontSize: 26}} />
+                            <GroupAdd sx={{fontSize: {xs: 22, sm: 26}}} />
                         </div>
                         <div className="step-details">
                             <span>STEP 2</span>
@@ -53,7 +53,7 @@ const Process = () => {
                     <div className="process-step">
                         <div className="process-connector"></div>
                         <div className="step-icon">
-                            <CallMerge sx={{fontSize: 26}} />
+                            <CallMerge sx={{fontSize: {xs: 22, sm: 26}}} />
                         </div>
                         <div className="step-details step-details-last">
                             <span>STEP 3</span>

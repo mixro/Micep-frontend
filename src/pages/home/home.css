@@ -32,10 +32,12 @@
 
 .hero-desc {
     padding-top: 35px;
+    width: 50%;
 }
 
 .hero-desc p {
     font-size: 22px;
+    line-height: 32px;
     color: var(--text-color);
 }
 
@@ -129,7 +131,7 @@
 }
    
    /*--------------MEDIA QUERY AND SCREEN--------------*/
-@media screen and (max-width: 770px){
+@media screen and (max-width: 770px) {
 
     /*----------------- hero -------------------*/
     .hero {
@@ -163,11 +165,13 @@
         font-weight: 500;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
     .hero-desc p {
         font-size: 17px;
         color: #464646;
+        line-height: 26px;
     }
 
     .hero-button {

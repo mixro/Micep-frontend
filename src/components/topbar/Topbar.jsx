@@ -3,6 +3,7 @@ import { Close, Menu } from "@mui/icons-material"
 import "./topbar.css"
 import { useState } from "react"
 import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Link } from "react-router-dom";
 
 
 const Topbar = () => {
@@ -27,9 +28,11 @@ const Topbar = () => {
             className="topbar-box"
         >
             {topLinks.map((link) => (
-                <div className="box-links" key={link._id}>
-                    <p>{link.title}</p>
-                </div>
+                <Link to={`/${link.title.toLocaleLowerCase()}`} key={link._id} className="link-main">
+                    <div className="box-links">
+                        <p>{link.title}</p>
+                    </div>
+                </Link>
             ))}
         </Box>
     );
@@ -37,7 +40,9 @@ const Topbar = () => {
   return (
     <div className="topbar-container">
         <div className="topbar-left">
-            <p>MICEP<span>DEV</span></p>
+            <Link to='/' className="link-main">
+                <p>MICEP<span>DEV</span></p>
+            </Link>
             <p className="registered">®</p>
         </div>
 
@@ -45,7 +50,9 @@ const Topbar = () => {
             <div className="topbar-links">
                 {topLinks.map((link) => (
                     <div className="topbar-link" key={link._id}>
-                        <p>{link.title}</p>
+                        <Link to={`/${link.title.toLocaleLowerCase()}`} className="link-main">
+                            <p>{link.title}</p>
+                        </Link>
                     </div>
                 ))}
             </div>

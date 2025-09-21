@@ -35,7 +35,7 @@ const Home = () => {
           </AnimatePresence>
         </div>
         <div className="hero-desc">
-          <p>Access 4,000+ timezone-aligned software engineers <br /> with experience in AI and 100+ other technologies.</p>
+          <p>Access 4,000+ timezone-aligned software engineers with experience in AI and 100+ other technologies.</p>
         </div>
         <div className="hero-button">
           <button>Schedule a Call</button>

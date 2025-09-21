@@ -193,6 +193,9 @@
     }
 
     /*----------------- working section -------------------*/
+    .working-section {
+        padding: 0 4%;
+    }
     .working-header {
         display: flex;
         align-items: center;
@@ -210,8 +213,13 @@
         flex-direction: column;
     }
 
+    .working-details h3 {
+        font-weight: 600;
+    }
+
     /*----------------- process container -------------------*/
     .process-container {
+        padding: 70px 2% 100px 3%; 
         padding-bottom: 100px;
     }
     
@@ -219,12 +227,28 @@
         width: 96%;
     }
 
+    .process-header h2 {
+        font-size: 31px;
+    }
+
+    .process-step {
+        gap: 20px;
+    }
+
     .step-details {
         padding-bottom: 50px;
     }
 
+    .step-details span {
+        font-size: 14px;
+    }
+
     .step-details h2 {
-        font-size: 24px;
+        font-size: 21px;
+    }
+
+    .step-details-last {
+        padding-bottom: 80px;
     }
 
     /*----------------- check us -------------------*/

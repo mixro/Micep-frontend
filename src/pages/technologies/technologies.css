@@ -1,0 +1,246 @@
+.technologies {
+    width: 100%;
+    background: var(--secondary-background);
+}
+
+
+  /*----------------- tech top -------------------*/
+.tech-top {
+    width: 100%;
+}
+
+.techTop-wrapper {
+    padding: 0 1%;
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-background);
+}
+
+.techtop_cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6%;
+    flex-basis: 20%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+
+.techtop_cover_right {
+    padding: 0 0 2% 2%;
+}
+
+.techtop_cover_icon {
+    flex-basis: 46%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(165, 165, 165, 0.24) 0px 3px 8px;;
+    justify-content: center;
+}
+
+.techtop_cover_icon img {
+    width: 80%;
+}
+
+.tech-search {
+    padding: 3% 5% 4%;
+    width: 58%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.74), 10%,var(--secondary-background), 80%, white);
+    text-align: center;
+}
+
+.tech-navigation-steps {
+    padding-bottom: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+.tech-header {
+    padding-bottom: 8%;
+}
+
+.techSearch-input {
+    width: 75%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.techSearch-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: black;
+    background: none;
+}
+
+.tech-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f3f3;
+    padding: 15px;
+    gap: 20px;
+}
+
+.tech-filters-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-filter button {
+    cursor: pointer;
+    padding: 4px 6px;
+    background: #cecece;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.filter-button-active button {
+    background: #f89a83;
+}
+
+  /*----------------- tech container -------------------*/
+.tech-container {
+    padding: 6% 5% 3%;
+}
+
+.tech-wrapper {
+    margin-bottom: 4.5%;
+}
+
+.tech-first-letter {
+    width: 100%;
+    position: relative;
+}
+
+.tech-first-letter p {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+}
+
+.tech-first-letter p::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    height: 2px;
+    width: 100%;
+    margin-left: 10px;
+    background: rgb(190, 189, 189);
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    gap: 2%;
+}
+
+.tech-list-item {
+    flex-basis: 15%;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    margin-bottom: 2%;
+    background: var(--primary-background);
+}
+
+.tech-item-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background: var(--secondary-background);
+}
+
+.tech-list-item img {
+    width: 120px;
+    height: 60px;
+}
+
+.tech-list-item p {
+    font-size: 14px;
+    color: rebeccapurple;
+    margin: 6px 3px;
+    text-align: center;
+}
+
+
+   
+   /*--------------MEDIA QUERY AND SCREEN--------------*/
+@media screen and (max-width: 770px) {
+    .technologies {
+        width: 100%;
+    }
+
+    /*----------------- tech top -------------------*/
+    .techTop-wrapper {
+        flex-direction: column;
+    }
+
+    .techtop_cover {
+        display: none;
+    }
+
+    .tech-search {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .tech-header {
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+
+    .tech-header h2 {
+        width: 100%;
+    }
+
+    .techSearch-input {
+        width: 94%;
+    }
+
+    .tech-filters {
+        flex-direction: column;
+    }
+
+    .tech-filters-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    /*----------------- tech container -------------------*/
+    .tech-container {
+        padding-top: 50px;
+    }
+
+    .tech-first-letter p {
+        font-size: 22px;
+    }
+
+    .tech-first-letter p::after {
+        width: 90%;
+        background: gainsboro;
+    }
+
+    .tech-list {
+        padding-top: 25px;
+        justify-content: space-between;
+    }
+
+    .tech-list-item {
+        flex-basis: 47%;
+        margin-bottom: 7%;
+    }
+}

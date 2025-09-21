@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-wrapper">
           <div className="footer-links">
             <div className="footer-links-item">
-              <h3>Discover Micep<span className='orange-dot'>Dev</span>®</h3>
+              <h3>Discover MicepDev</h3>
               <div className="footer-link">
                 <ul>
                   <li>About Us</li>
