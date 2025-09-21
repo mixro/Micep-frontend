@@ -612,3 +612,151 @@ export const technologiesArray = [
   // X
   { id: 78, image: "xamarin", name: "Xamarin", letter: "X", category: "Mobile" },
 ];
+
+export const industriesList = [
+  {
+    id: 1,
+    title: "Advertising",
+    desc: "Amplify your brand's message by crafting engaging campaigns that connect with audiences and drive measurable results."
+  },
+  {
+    id: 2,
+    title: "Agriculture",
+    desc: "Elevate farming efficiency with sustainable practices and precision technologies for higher crop yields and resource optimization."
+  },
+  {
+    id: 3,
+    title: "Aviation",
+    desc: "Enhance passenger experiences and streamline flight operations while maintaining the highest safety standards in aviation."
+  },
+  {
+    id: 4,
+    title: "Banking",
+    desc: "Improve customer banking experiences with secure, user-friendly platforms, while optimizing backend operations and ensuring compliance."
+  },
+  {
+    id: 5,
+    title: "Construction",
+    desc: "Deliver projects on time and within budget by improving collaboration, optimizing workflows, and ensuring compliance in construction."
+  },
+  {
+    id: 6,
+    title: "E-Learning",
+    desc: "Transform education through interactive online platforms that expand access and engage learners in innovative ways."
+  },
+  {
+    id: 7,
+    title: "Education",
+    desc: "Enrich the learning environment by fostering student engagement, simplifying administration, and embracing modern teaching methods."
+  },
+  {
+    id: 8,
+    title: "Entertainment",
+    desc: "Captivate audiences by creating immersive experiences, optimizing content delivery, and expanding your reach across platforms."
+  },
+  {
+    id: 9,
+    title: "Event Management",
+    desc: "Create unforgettable events by simplifying planning processes, enhancing attendee engagement, and seamlessly managing logistics."
+  },
+  {
+    id: 10,
+    title: "Finance",
+    desc: "Strengthen financial operations and ensure compliance to support strategic growth and stability in your financial endeavors."
+  },
+  {
+    id: 11,
+    title: "Fintech",
+    desc: "Streamline financial operations, promote a smoother user experience, and ensure secure transactions."
+  },
+  {
+    id: 12,
+    title: "Healthcare",
+    desc: "Create HIPAA-compliant healthcare software that enhances patient care, streamlines operations, and scales with your evolving needs."
+  },
+  {
+    id: 13,
+    title: "Human Capital Management",
+    desc: "Maximize workforce potential by streamlining HR tasks, enhancing employee engagement, and effectively managing talent."
+  },
+  {
+    id: 14,
+    title: "Insurance",
+    desc: "Simplify policy management, fraud detection, claim processing, and risk assessment."
+  },
+  {
+    id: 15,
+    title: "Legal",
+    desc: "Increase efficiency in legal practices by automating workflows, improving case management, and maintaining compliance standards."
+  },
+  {
+    id: 16,
+    title: "Lending",
+    desc: "Speed up loan approvals, enhance borrower experiences, and manage risks effectively to streamline your lending services."
+  },
+  {
+    id: 17,
+    title: "Manufacturing",
+    desc: "Boost productivity and product quality by optimizing production processes and improving supply chain efficiency."
+  },
+  {
+    id: 18,
+    title: "Martech",
+    desc: "Drive growth by leveraging marketing technologies to personalize customer interactions and analyze data-driven insights."
+  },
+  {
+    id: 19,
+    title: "Oil and Gas",
+    desc: "Optimize exploration and production while prioritizing safety and efficient resource management in the energy sector."
+  },
+  {
+    id: 20,
+    title: "Payment Platforms",
+    desc: "Provide seamless and secure payment experiences by simplifying transactions and enhancing user interfaces."
+  },
+  {
+    id: 21,
+    title: "Pharmacy",
+    desc: "Automate prescription management, enhance inventory tracking, optimize patient interactions, and improve overall pharmacy efficiency."
+  },
+  {
+    id: 22,
+    title: "Power Utilities",
+    desc: "Monitor and manage energy grids to promote sustainable and efficient power use. Improve billing processes, asset management, demand response, and compliance."
+  },
+  {
+    id: 23,
+    title: "Real Estate",
+    desc: "Improve property listings, virtual tours, and transaction processes. Make buying and selling real estate faster and easier."
+  },
+  {
+    id: 24,
+    title: "Retail",
+    desc: "Reinvent the retail experience by engaging customers, managing inventory effectively, and increasing sales opportunities."
+  },
+  {
+    id: 25,
+    title: "Supply Chain",
+    desc: "Streamline inventory, procurement, and distribution processes with integrated software solutions, for a smoother flow of goods from origin to destination."
+  },
+  {
+    id: 26,
+    title: "Telecommunications",
+    desc: "Elevate network management, customer interactions, and service deployments with advanced software solutions, reinforcing connectivity and service reliability."
+  },
+  {
+    id: 27,
+    title: "Transportation Logistics",
+    desc: "Enhance route optimization, cargo tracking, inventory management, fleet management and more with fast, secure software solutions."
+  },
+  {
+    id: 28,
+    title: "Travel Hospitality",
+    desc: "Deliver exceptional guest services by personalizing experiences, streamlining reservations, and optimizing operations."
+  },
+  {
+    id: 29,
+    title: "Warehouse Management",
+    desc: "Improve supply chain operations with enhanced inventory control, optimized storage solutions, and expedited distribution."
+  }
+];

@@ -39,30 +39,15 @@ const Technologies = () => {
         <div className="tech-top">
             <div className="techTop-wrapper">
                 <div className="techtop_cover">
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/c_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/c_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
+                    {technologiesArray
+                        .filter((tech) => tech.id % 3 == 0)
+                        .slice(0, 8)
+                        .map((tech) => (
+                            <div className="techtop_cover_icon" key={tech.id}>
+                                <img src={`/assets/logos/${tech.image}_logo.svg`} className='AI' />
+                            </div>
+                        )
+                    )}
                 </div>
                 <div className="tech-search">
                     <div className="navigation-steps tech-navigation-steps">
@@ -80,27 +65,15 @@ const Technologies = () => {
                     </div>
                 </div>
                 <div className="techtop_cover techtop_cover_right">
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
-                    <div className="techtop_cover_icon">
-                        <img src='/assets/ai_logo.svg' className='AI' />
-                    </div>
+                    {technologiesArray
+                        .filter((tech) => tech.id % 7 == 0)
+                        .slice(0, 8)
+                        .map((tech) => (
+                            <div className="techtop_cover_icon" key={tech.id}>
+                                <img src={`/assets/logos/${tech.image}_logo.svg`} className='AI' />
+                            </div>
+                        )
+                    )}
                 </div>
             </div>
             <div className="tech-filters">

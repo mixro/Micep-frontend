@@ -1,0 +1,11 @@
+.industries-wrapper {
+    gap: 3.5%;
+    justify-content: flex-start;
+}
+   
+   /*--------------MEDIA QUERY AND SCREEN--------------*/
+@media screen and (max-width: 770px) {
+    .industries_header h2 {
+        width: 90%;
+    }
+}

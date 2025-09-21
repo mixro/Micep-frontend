@@ -41,6 +41,7 @@
 
 .techtop_cover_icon img {
     width: 80%;
+    opacity: 0.4;
 }
 
 .tech-search {
@@ -152,6 +153,18 @@
     border: 1px solid rgb(202, 202, 202);
     margin-bottom: 2%;
     background: var(--primary-background);
+    cursor: pointer;
+}
+
+.tech-list-item:hover {
+    border: 1px solid var(--soft-black);
+    color: var(--primary-background);
+    background: var(--soft-black);
+    color: var(--secondary-background);
+}
+
+.tech-list-item:hover img {
+    scale: 1.2;
 }
 
 .tech-item-logo {
@@ -159,6 +172,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 15px 0;
     border-radius: 5px 5px 0 0;
     background: var(--secondary-background);
 }
@@ -170,8 +184,7 @@
 
 .tech-list-item p {
     font-size: 14px;
-    color: rebeccapurple;
-    margin: 6px 3px;
+    margin: 12px 3px;
     text-align: center;
 }
 
@@ -231,7 +244,7 @@
 
     .tech-first-letter p::after {
         width: 90%;
-        background: gainsboro;
+        background: rgb(189, 189, 189);
     }
 
     .tech-list {
