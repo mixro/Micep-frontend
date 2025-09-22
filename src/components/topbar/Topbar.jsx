@@ -28,7 +28,7 @@ const Topbar = () => {
             className="topbar-box"
         >
             {topLinks.map((link) => (
-                <Link to={`/${link.title.toLocaleLowerCase()}`} key={link._id} className="link-main">
+                <Link to={`/${link.location}`} key={link._id} className="link-main">
                     <div className="box-links">
                         <p>{link.title}</p>
                     </div>
@@ -50,7 +50,7 @@ const Topbar = () => {
             <div className="topbar-links">
                 {topLinks.map((link) => (
                     <div className="topbar-link" key={link._id}>
-                        <Link to={`/${link.title.toLocaleLowerCase()}`} className="link-main">
+                        <Link to={`/${link.location}`} className="link-main">
                             <p>{link.title}</p>
                         </Link>
                     </div>

@@ -46,23 +46,28 @@ export const expertiseList = [
 export const topLinks = [
     {
         _id: 1,
-        title: "Solutions"
+        title: "Solutions",
+        location: "solutions",
     },
     {
         _id: 2,
-        title: "Technologies"
+        title: "Technologies",
+        location: "technologies",
     },
     {
         _id: 3,
-        title: "Industries"
+        title: "Industries",
+        location: "industries",
     },
     {
         _id: 4,
-        title: "About"
+        title: "About",
+        location: "about-us",
     },
     {
         _id: 5,
-        title: "Our work"
+        title: "Our work",
+        location: "our-works",
     },
 ]
 
