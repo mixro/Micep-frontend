@@ -598,7 +598,7 @@ export const technologiesArray = [
 
   // T
   { id: 73, image: "tableau", name: "Tableau", letter: "T", category: "Data Visualization" },
-  { id: 74, image: "typesrcipt", name: "Typescript", letter: "T", category: "Programming" },
+  { id: 74, image: "typescript", name: "Typescript", letter: "T", category: "Programming" },
 
   // U
   { id: 75, image: "unity", name: "Unity", letter: "U", category: "Game Development" },
@@ -611,6 +611,28 @@ export const technologiesArray = [
 
   // X
   { id: 78, image: "xamarin", name: "Xamarin", letter: "X", category: "Mobile" },
+];
+
+export const techBackgroundList = [
+  { id: 1, image: "android", name: "Android", letter: "A", category: "Mobile" },
+  { id: 2, image: "angular", name: "Angular", letter: "A", category: "Frontend" },
+  { id: 3, image: "blockchain", name: "Blockchain", letter: "B", category: "Blockchain" },
+  { id: 4, image: "c", name: "C", letter: "C", category: "Programming" },
+  { id: 5, image: "dart", name: "Dart", letter: "D", category: "Programming" },
+  { id: 6, image: "django", name: "Django", letter: "D", category: "Backend" },
+  { id: 7, image: "express", name: "Express", letter: "E", category: "Backend" },
+  { id: 8, image: "flutter", name: "Flutter", letter: "F", category: "Mobile" },
+  { id: 9, image: "html5", name: "HTML5", letter: "H", category: "Frontend" },
+  { id: 10, image: "java", name: "Java", letter: "J", category: "Programming" },
+  { id: 11, image: "javascript", name: "JavaScript", letter: "J", category: "Programming" },
+  { id: 12, image: "nodejs", name: "Node.js", letter: "N", category: "Backend" },
+  { id: 13, image: "php", name: "PHP", letter: "P", category: "Programming" },
+  { id: 14, image: "postgresql", name: "PostgreSQL", letter: "P", category: "Database" },
+  { id: 15, image: "python", name: "Python", letter: "P", category: "Programming" },
+  { id: 16, image: "react", name: "React", letter: "R", category: "Frontend" },
+  { id: 17, image: "reactNative", name: "React Native", letter: "R", category: "Mobile" },
+  { id: 18, image: "spring", name: "Spring Boot", letter: "S", category: "Backend" },
+  { id: 19, image: "vuejs", name: "Vue", letter: "V", category: "Frontend" },
 ];
 
 export const industriesList = [

@@ -1,6 +1,6 @@
 import { ChevronRight, HomeOutlined, Search } from '@mui/icons-material'
 import './technologies.css'
-import { searchFilters, technologiesArray } from '../../static/DummyData'
+import { searchFilters, techBackgroundList, technologiesArray } from '../../static/DummyData'
 import { useState } from 'react';
 
 const Technologies = () => {
@@ -29,18 +29,16 @@ const Technologies = () => {
         }, {});
     };
 
-    const groupedTechs = groupByFirstLetter(filteredTechs); // filteredTechs is after search & category
+    const groupedTechs = groupByFirstLetter(filteredTechs); 
     const sortedLetters = Object.keys(groupedTechs).sort();
-
-    console.log(filteredTechs)
 
   return (
     <div className="technologies">
         <div className="tech-top">
             <div className="techTop-wrapper">
                 <div className="techtop_cover">
-                    {technologiesArray
-                        .filter((tech) => tech.id % 3 == 0)
+                    {techBackgroundList
+                        .filter((tech) => tech.id % 2 == 0)
                         .slice(0, 8)
                         .map((tech) => (
                             <div className="techtop_cover_icon" key={tech.id}>
@@ -65,8 +63,8 @@ const Technologies = () => {
                     </div>
                 </div>
                 <div className="techtop_cover techtop_cover_right">
-                    {technologiesArray
-                        .filter((tech) => tech.id % 7 == 0)
+                    {techBackgroundList
+                        .filter((tech) => tech.id % 2 != 0)
                         .slice(0, 8)
                         .map((tech) => (
                             <div className="techtop_cover_icon" key={tech.id}>
