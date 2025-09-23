@@ -7,6 +7,7 @@ import Technologies from './pages/technologies/Technologies';
 import Industries from './pages/Industries/Industries';
 import Works from './pages/works/Works';
 import About from './pages/about/About';
+import NotFound from './pages/notFound/NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/industries' element={<Layout><Industries /></Layout>} />
           <Route path='/our-works' element={<Layout><Works /></Layout>} />
           <Route path='/about-us' element={<Layout><About /></Layout>} />
+          <Route path='*' element={<Layout><NotFound /></Layout>} />
         </Routes>
       </Router>
     </div>
