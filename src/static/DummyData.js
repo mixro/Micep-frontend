@@ -787,3 +787,26 @@ export const industriesList = [
     desc: "Improve supply chain operations with enhanced inventory control, optimized storage solutions, and expedited distribution."
   }
 ];
+
+export const ourPrinciples = [
+  {
+    id: 1,
+    title: "Talent Excellence First",
+    desc: "When our clients excel, we succeed. We cultivate enduring partnerships and focus on addressing their toughest tech needs. This commitment shapes our operational foundation."
+  },
+  {
+    id: 2,
+    title: "Deliver Innovation",
+    desc: "Use insights to connect our solutions to measurable tech outcomes. We take ownership, uphold accountability, and innovate relentlessly. Resourcefulness fuels our progress. Results define our reputation."
+  },
+  {
+    id: 3,
+    title: "Collaborate Globally",
+    desc: "We thrive together or not at all. By uniting teams across roles and regions, we ensure authentic collaboration and open communication. We share expertise to achieve success."
+  },
+  {
+    id: 4,
+    title: "Lead with Vision",
+    desc: "Just as we build cutting-edge software, growth drives us. We harness resources to advance skills. Continuously learn from Africa’s tech landscape. Challenge norms to stay ahead."
+  }
+];

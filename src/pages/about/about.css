@@ -1,0 +1,161 @@
+.about-container {
+    width: 100%;
+    background: var(--secondary-background);
+}
+
+  /*----------------- about top -------------------*/
+.about-top {
+    height: 320px;
+    background-image: linear-gradient(90deg, #ffffff, 80%, #ffffff00), url('/assets/background - Copy.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0 4%;
+}
+
+.about-top h2 {
+    padding-top: 100px;
+    padding-left: 8%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+
+    /*----------------- about item -------------------*/        
+.about-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 12% 5% 0;
+    justify-content: space-between;
+}
+
+.about-desc {
+    flex-basis: 45%;
+}
+
+.about-image {
+    flex-basis: 46%;
+}
+
+.about-desc h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--soft-black);
+    margin-bottom: 25px;    
+}
+
+.about-desc p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.our-mission-desc {
+    padding-top: 10%;
+}
+
+.our-mission-section {
+    padding-bottom: 6%;
+}
+
+.our-mission-desc p {
+    margin-bottom: 40px;
+}
+
+.about-small-header {
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--soft-black);
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.our-mission {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our-mission img {
+    object-fit: cover;
+    aspect-ratio: 1/0.7;
+}
+
+
+    /*----------------- operating principles -------------------*/        
+.operating-principles {
+    background: var(--primary-background);
+    padding: 5% 5%;
+}
+
+.operating-principles h2 {
+    padding-bottom: 4%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.principle-item {
+    flex-basis: 48%;
+    margin-bottom: 4%;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--secondary-background);
+}
+
+.principle-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(39, 39, 39);
+    margin-bottom: 20px;
+}
+
+.principle-item p {
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+    line-height: 24px;
+}
+
+
+    /*----------------- join us -------------------*/        
+.join-us {
+    padding: 5% 2%;
+    color: var(--secondary-background);
+    background: var(--soft-black);
+}
+
+.join-us h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.join-us-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.join-us-button button {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-background);
+    cursor: pointer;
+    background: var(--orange-soft);
+}

@@ -147,7 +147,7 @@
     }
 
     .topbar-logo-container p {
-        display: none;
+        font-size: 24px;
     }
 
     .topbar-logo {
