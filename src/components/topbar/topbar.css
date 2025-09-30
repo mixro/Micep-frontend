@@ -14,9 +14,26 @@
     position: relative;
 }
 
+.topbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.topbar-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .topbar-left p {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .topbar-left p span {
@@ -26,6 +43,7 @@
 .registered {
     position: absolute;
     top: -5px;
+    font-size: 26px;
     right: -23px;
 }
 
@@ -114,7 +132,7 @@
     /*--------------MEDIA QUERY AND SCREEN--------------*/
 @media screen and (max-width: 770px){
     .topbar-container {
-        padding: 25px 4%;
+        padding: 20px 4%;
         z-index: 1301;
         position: relative;
     }
@@ -126,6 +144,14 @@
     .topbar-left p {
         font-size: 24px;
         text-transform: uppercase;
+    }
+
+    .topbar-logo-container p {
+        display: none;
+    }
+
+    .topbar-logo {
+        width: 33px;
     }
 
     .registered {

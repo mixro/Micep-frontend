@@ -41,9 +41,13 @@ const Topbar = () => {
     <div className="topbar-container">
         <div className="topbar-left">
             <Link to='/' className="link-main">
-                <p>MICEP<span>DEV</span></p>
+                <div className="topbar-logo-container">
+                    <div className="topbar-logo">
+                        <img src="/micep-logo.png" alt="MICEP LOGO" />
+                    </div>
+                    <p>MICEP<span>DEV</span></p>
+                </div>
             </Link>
-            <p className="registered">®</p>
         </div>
 
         <div className="topbar-right">

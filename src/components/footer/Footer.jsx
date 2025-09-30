@@ -8,8 +8,13 @@ const Footer = () => {
       <div className="footer-left">
         <div className="footer-logo">
           <div className="topbar-left">
-            <p>MICEP<span>DEV</span></p>
-            <p className="registered">®</p>
+            <Link to='/' className="link-main">
+                <div className="topbar-logo-container">
+                    <div className="topbar-logo">
+                        <img src="/micep-logo.png" alt="MICEP LOGO" />
+                    </div>
+                </div>
+            </Link>
           </div>
         </div>
         <div className="footer-wrapper">
