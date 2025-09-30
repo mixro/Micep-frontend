@@ -6,17 +6,18 @@
   /*----------------- about top -------------------*/
 .about-top {
     height: 320px;
-    background-image: linear-gradient(90deg, #ffffff, 80%, #ffffff00), url('/assets/background - Copy.jpg');
+    background-image: linear-gradient(90deg, #ffffffa8, 80%, #ffffff00), url('/assets/background - Copy.jpg');
     background-position: center;
     background-size: cover;
     padding: 0 4%;
 }
 
 .about-top h2 {
+    width: 70%;
     padding-top: 100px;
-    padding-left: 8%;
-    font-size: 40px;
-    font-weight: 700;
+    padding-left: 4%;
+    font-size: 45px;
+    font-weight: 800;
     line-height: 60px;
 }
 
@@ -89,7 +90,7 @@
 
     /*----------------- operating principles -------------------*/        
 .operating-principles {
-    background: var(--primary-background);
+    background: var(--tertiary-background);
     padding: 5% 5%;
 }
 
@@ -139,6 +140,8 @@
     text-align: center;
     font-size: 40px;
     font-weight: 600;
+    width: 50%;
+    justify-self: center;
 }
 
 .join-us-button {
@@ -157,5 +160,97 @@
     font-weight: 500;
     color: var(--secondary-background);
     cursor: pointer;
-    background: var(--orange-soft);
+    background: var(--green-deep);
+}
+
+
+
+   /*--------------MEDIA QUERY AND SCREEN--------------*/
+@media screen and (max-width: 770px) {
+    
+      /*----------------- about top -------------------*/
+    .about-top {
+        height: 270px;
+        background-image: linear-gradient(180deg, #fa521f8e, 80%, #fa521fb7), url('/assets/background - Copy.jpg');
+    }
+
+    .about-top h2 {
+        font-size: 32px;
+        font-weight: 700;
+        padding-top: 80px;
+        padding-left: 0;
+        color: var(--secondary-background);
+        line-height: normal;
+        width: 100%;
+    }
+
+        /*----------------- about item -------------------*/        
+    .about-item {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .our-mission-section {
+        padding-bottom: 80px;
+    }
+
+    .about-desc h3 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .about-desc p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .about-small-header {
+        margin: 20px 0;
+    }
+
+    .our-mission-img {
+        display: none;
+    }
+
+        /*----------------- operating principles -------------------*/        
+    .operating-principles {
+        padding: 50px 5%;
+    }
+
+    .operating-principles h2 {
+        margin-bottom: 30px;
+        font-size: 27px;      
+    }
+
+    .principle-item {
+        flex-basis: 100%;
+        padding: 20px 15px;
+        margin-bottom: 6%;
+    }
+
+    .principle-item h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .principle-item p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+        /*----------------- join us -------------------*/
+    .join-us {
+        padding: 45px 2%;
+    }
+
+    .join-us h2 {
+        font-size: 28px;
+        width: 90%;
+        line-height: 36px;
+    }
+
+    .join-us-button button {
+        width: 180px;
+    }
 }

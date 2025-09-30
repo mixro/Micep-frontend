@@ -21,3 +21,23 @@
 .bold {
   font-weight: 600;
 }
+
+.SMALLSCREEN {
+  display: none;
+}
+
+.LARGESCREEN {
+  display: block;
+}
+
+
+   /*--------------MEDIA QUERY AND SCREEN--------------*/
+@media screen and (max-width: 770px) {
+  .SMALLSCREEN {
+    display: block;
+  }
+
+  .LARGESCREEN {
+    display: none;
+  }
+}
