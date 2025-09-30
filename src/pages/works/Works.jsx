@@ -115,6 +115,18 @@ const Works = () => {
                 </div>
             </div>
         </div>
+
+        <div className="check-us">
+            <div className="checkUs-image">
+                <img src="/assets/bottom.avif" alt="PR" />
+            </div>
+            <div className="check-us-header">
+                <h2>Brands like <span className='orange-dot'>Flame Luxury</span> already <br />accelerate their roadmaps with us. <br />Discover if we're a good fit for you.</h2>
+            </div>
+            <div className="check-us-button">
+                <button>Schedule a Call</button>
+            </div>
+        </div>
     </div>
   )
 }

@@ -1,12 +1,11 @@
 .works {
-    background: var(--secondary-background);
-    padding: 0 2%; 
+    background: var(--secondary-background); 
 }
 
 
   /*----------------- works top -------------------*/
 .works-top {
-    padding: 3% 0;
+    padding: 3% 2%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,6 +31,7 @@
     flex: 1;
     font-size: 18px;
     border: none;
+    background: transparent;
     outline: none;
     color: black;
     margin-left: 10px;
@@ -51,7 +51,7 @@
 
   /*----------------- works container -------------------*/
 .works-container {
-    padding: 4% 5%;
+    padding: 4% 7%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -84,7 +84,7 @@
     flex-direction: column;
     flex: 1;
 }
-
+ 
 .works-item-desc h3 {
     font-weight: 600;
     font-size: 21px;
@@ -106,4 +106,33 @@
 .works-read-more button:hover {
     background: var(--orange-soft);
     color: var(--secondary-background);
+}
+
+
+
+   /*--------------MEDIA QUERY AND SCREEN--------------*/
+@media screen and (max-width: 770px) {
+      /*----------------- works top -------------------*/
+    .works-top {
+        padding: 10% 2% ;
+    }
+
+    .works-top h2 {
+        font-size: 36px;
+    }
+
+    .works-search {
+        width: 98.5%;
+    }
+
+
+      /*----------------- works container -------------------*/
+    .works-container {
+        padding: 4% 3%;
+    }
+
+    .works-item {
+        flex-basis: 100%;
+        margin-bottom: 35px;
+    }
 }
