@@ -14,8 +14,10 @@
   --blue-cta: #2196F3;
   --blue-hover: #1976D2;
   --border-color: #ddd;
+
   --shadow-light: 0 2px 4px rgba(0,0,0,0.1);
   --shadow-medium: 0 4px 8px rgba(0,0,0,0.1);
+  --shadow-deeper: 0 0 5px 0 rgba(0, 0, 0, 0.904);
 }
 
 .bold {
