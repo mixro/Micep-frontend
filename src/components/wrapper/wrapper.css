@@ -1,0 +1,18 @@
+.wrapper-component {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex-start;
+    background: #d3d3d3;
+}
+
+.wrapper-container {
+    width: 100vw;
+    max-width: 1440px;
+    background: var(--background);
+    display: flex;
+    align-items: flex-start;
+    overflow-x: hidden;
+    min-height: 100vh;
+}

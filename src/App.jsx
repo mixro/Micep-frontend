@@ -10,6 +10,7 @@ import About from './pages/about/About';
 import NotFound from './pages/notFound/NotFound';
 import Call from './pages/call/Call';
 import Success from './pages/success/Success';
+import Wrapper from './components/wrapper/Wrapper';
 
 function App() {
   return (
@@ -24,11 +25,11 @@ function App() {
           <Route path='/industries' element={<Layout><Industries /></Layout>} />
           <Route path='/our-works' element={<Layout><Works /></Layout>} />
           <Route path='/about-us' element={<Layout><About /></Layout>} />
-
-          {/*------- Without layout ---------*/}
-          <Route path="/start/basic-details" element={<Call />} />
-          <Route path="/success" element={<Success />} />
           <Route path='*' element={<Layout><NotFound /></Layout>} />
+
+          {/*------- With wrapper ---------*/}
+          <Route path="/start/basic-details" element={<Wrapper><Call /></Wrapper>} />
+          <Route path="/success" element={<Wrapper><Success /></Wrapper>} />
         </Routes>
       </Router>
     </div>
