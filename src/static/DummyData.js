@@ -810,3 +810,25 @@ export const ourPrinciples = [
     desc: "Just as we build cutting-edge software, growth drives us. We harness resources to advance skills. Continuously learn from Africa’s tech landscape. Challenge norms to stay ahead."
   }
 ];
+
+
+export const successStories = [
+  {
+    _id: 1,
+    img: 'https://cdn.businessday.ng/wp-content/uploads/2024/07/20240715_171146_0000.png',
+    title: 'Our CEO, Joseph Chongola, Named Africa\'s Entrepreneur Of The Year 2025!',
+    desc: 'This award honors Joseph\'s exceptional leadership which has driven MICEP TECH to remarkable success as a leading nearshore software firm originating from Tanzania.'
+  },
+  {
+    _id: 2,
+    img: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1070109985146368',
+    title: 'Joseph Christopher Chongola Tackles Tech Talent Shortage at GITEX Africa (2025)',
+    desc: 'Joseph shares unique insights on the tech talent shortage, leveraging findings from evaluating 1M+ applications annually.'
+  },
+  {
+    _id: 3,
+    img: 'https://www.techloy.com/content/images/2023/05/The-Fastest-Growing-Tech-Companies-in-Africa-for-2023--2---1-.png',
+    title: 'MICEP TECH Ranks on Financial Times\' Africa\'s Fastest-Growing Companies 2025',
+    desc: 'Our impressive 764% revenue growth in the first 4 years earned us a spot on this prestigious list, highlighting our rapid expansion.'
+  }
+];

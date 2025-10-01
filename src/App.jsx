@@ -9,6 +9,7 @@ import Works from './pages/works/Works';
 import About from './pages/about/About';
 import NotFound from './pages/notFound/NotFound';
 import Call from './pages/call/Call';
+import Success from './pages/success/Success';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
           <Route path='/about-us' element={<Layout><About /></Layout>} />
 
           {/*------- Without layout ---------*/}
-          <Route path="/start" element={<Call />} />
+          <Route path="/start/basic-details" element={<Call />} />
+          <Route path="/success" element={<Success />} />
           <Route path='*' element={<Layout><NotFound /></Layout>} />
         </Routes>
       </Router>

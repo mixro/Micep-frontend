@@ -61,7 +61,7 @@ const Topbar = () => {
                 ))}
             </div>
             <div className="topbar-button">
-                <Link to="/start" className="link-main">
+                <Link to="/start/basic-details" className="link-main">
                     <button>Schedule a Call</button>
                 </Link>
             </div>

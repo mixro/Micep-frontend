@@ -39,7 +39,7 @@ const Home = () => {
           <p>Access 4,000+ timezone-aligned software engineers with experience in AI and 100+ other technologies.</p>
         </div>
         <div className="hero-button">
-          <Link to="/start" className='link-main'>
+          <Link to="/start/basic-details" className='link-main'>
             <button>Schedule a Call</button>
           </Link>
         </div>

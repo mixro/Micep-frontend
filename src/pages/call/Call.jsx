@@ -1,5 +1,6 @@
 import { East } from '@mui/icons-material'
 import "./call.css"
+import { Link } from 'react-router-dom'
 
 const Call = () => {
   return (
@@ -49,7 +50,9 @@ const Call = () => {
                 </div>
             </div>
             <div className="call-user-button">
-                <button>Get Started <East /></button>
+                <Link to='/success' className='link-main'>
+                    <button>Get Started <East /></button>
+                </Link>
             </div>
             <div className="LARGESCREEN">
                 <div className="call-footer">
