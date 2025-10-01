@@ -56,7 +56,7 @@ const About = () => {
         </div>
 
         <div className="join-us">
-            <h2>Want to join us? We’re expanding our talent across Africa’s regions.</h2>
+            <h2>Want to <span className="orange-dot">join us</span>? We’re expanding our talent across Africa’s regions.</h2>
             <div className="join-us-button">
                 <button>Join Us</button>
             </div>

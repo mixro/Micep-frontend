@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PlayCircle } from '@mui/icons-material';
 import Expertise from '../../components/expertise/Expertise';
 import Process from '../../components/process/Process';
+import { Link } from 'react-router-dom';
 const words = ["Tech Talents", "Ai Engineers", "Cloud Engineers", "Data Engineers"];
 
 const Home = () => {
@@ -38,7 +39,9 @@ const Home = () => {
           <p>Access 4,000+ timezone-aligned software engineers with experience in AI and 100+ other technologies.</p>
         </div>
         <div className="hero-button">
-          <button>Schedule a Call</button>
+          <Link to="/start" className='link-main'>
+            <button>Schedule a Call</button>
+          </Link>
         </div>
         <div className="clip-top-circle">
         </div>

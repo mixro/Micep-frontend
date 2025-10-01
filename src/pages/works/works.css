@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     padding: 6px;
+    gap: 10px;
 }
 
 .works-search input {
@@ -118,7 +119,7 @@
     }
 
     .works-top h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .works-search {

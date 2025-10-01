@@ -11,6 +11,8 @@
   --green-deep: #107C5A;
   --orange-soft: #fa521f;
   --orange-accent: #FF9800;
+  --soft-pink: #FEF1ED;
+  --deep-pink: #f79e83;
   --blue-cta: #2196F3;
   --blue-hover: #1976D2;
   --border-color: #ddd;
@@ -22,6 +24,10 @@
 
 .bold {
   font-weight: 600;
+}
+
+.text-align-right {
+  text-align: right;
 }
 
 .SMALLSCREEN {

@@ -61,7 +61,9 @@ const Topbar = () => {
                 ))}
             </div>
             <div className="topbar-button">
-                <button>Schedule a Call</button>
+                <Link to="/start" className="link-main">
+                    <button>Schedule a Call</button>
+                </Link>
             </div>
             <div className="menu-icon">
                 {open 

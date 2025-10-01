@@ -8,18 +8,24 @@ import Industries from './pages/Industries/Industries';
 import Works from './pages/works/Works';
 import About from './pages/about/About';
 import NotFound from './pages/notFound/NotFound';
+import Call from './pages/call/Call';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
+
+          {/*------- With layout ---------*/}
           <Route path='/' element={<Layout><Home /></Layout> } />
           <Route path='/solutions' element={<Layout><Solutions /></Layout>} />
           <Route path='/technologies' element={<Layout><Technologies /></Layout>} />
           <Route path='/industries' element={<Layout><Industries /></Layout>} />
           <Route path='/our-works' element={<Layout><Works /></Layout>} />
           <Route path='/about-us' element={<Layout><About /></Layout>} />
+
+          {/*------- Without layout ---------*/}
+          <Route path="/start" element={<Call />} />
           <Route path='*' element={<Layout><NotFound /></Layout>} />
         </Routes>
       </Router>
