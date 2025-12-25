@@ -1,13 +1,24 @@
 import { ChevronRight, East, HomeOutlined, Search } from '@mui/icons-material'
 import './works.css'
+import { micepProjects } from '../../static/DummyData';
+import { useState } from 'react';
 
 const Works = () => {
+    const [searchQuery, setSearchQuery] = useState("");
+    
+    const filteredWorks = micepProjects.filter((item) => {
+        const workHeader = item.title.toLowerCase().includes(searchQuery)
+        const workIndustry = item.industry.toLowerCase().includes(searchQuery)
+
+        return workHeader || workIndustry
+    })
+
   return (
     <div className="works">
         <div className="works-top">
             <h2>Showcasing our expertise<br /> <span className="orange-dot">through successful projects.</span></h2>
             <div className="works-search">
-                <input type="text" placeholder='Search by technology, industry, or solution...' />
+                <input type="text" onChange={(e) => setSearchQuery(e.target.value)} placeholder='Search by title or industry...' />
                 <div className="works-search-icon">
                     <Search />
                 </div>
@@ -15,105 +26,26 @@ const Works = () => {
         </div>
 
         <div className="works-container">
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/about-cover.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
+            { filteredWorks.length > 0 
+                ?  filteredWorks.map((work, index) => (
+                        <div className="works-item" key={index}>
+                            <div className="works-item-image">
+                                <img src={work.img} alt="WORKS" />
+                            </div>
+                            <div className="works-item-desc">
+                                <h3>{work.title}</h3>
+                                <p>{work.desc}</p>
+                                <div className="works-read-more">
+                                    <button>Read More <East /> </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                :
+                    <div className="no_work">
+                        <h3>No Project Available !!</h3>
                     </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/desktop.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/about-cover-1.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/about-cover.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/desktop.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/about-cover-1.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/about-cover.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/desktop.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
-            <div className="works-item">
-                <div className="works-item-image">
-                    <img src="/assets/about-cover-1.jpg" alt="WORKS" />
-                </div>
-                <div className="works-item-desc">
-                    <h3>HIPAA-Compliant Provider-to-Provider Telehealth Platform for Scalable Behavioral Care Delivery</h3>
-                    <div className="works-read-more">
-                        <button>Read More <East /> </button>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
 
         <div className="check-us">

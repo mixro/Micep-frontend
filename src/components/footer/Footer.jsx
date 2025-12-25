@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Call, East, Facebook, Instagram, LinkedIn, Mail, X } from '@mui/icons-material'
 
 const Footer = () => {
+    const year = new Date().getFullYear();
+
   return (
     <div className="footer-component">
       <div className="footer-left">
@@ -63,7 +65,7 @@ const Footer = () => {
               <p>Do Not Sell My Personal Information</p>
             </div>
             <div className="footer-below-rights">
-              <p>MICEP<span className='orange-dot'>DEV</span>® 2018 - 2025. All rights reserved.</p>
+              <p>MICEP<span className='orange-dot'>DEV</span>® 2018 - {year}. All rights reserved.</p>
             </div>
           </div>
         </div>

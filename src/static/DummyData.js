@@ -832,3 +832,76 @@ export const successStories = [
     desc: 'Our impressive 764% revenue growth in the first 4 years earned us a spot on this prestigious list, highlighting our rapid expansion.'
   }
 ];
+
+export const micepProjects = [
+  {
+    _id: 1,
+    title: "TanzFin Mobile Banking App",
+    industry: "FinTech",
+    img: "https://cdn.dribbble.com/userupload/44827359/file/6ef4f7671ed3750b86aacffe1a82a180.png?resize=752x&vertical=center",
+    desc: "A secure mobile banking platform integrating local payment gateways for seamless transactions in Tanzania."
+  },
+  {
+    _id: 2,
+    title: "AgriConnect Farmer Marketplace",
+    industry: "AgriTech",
+    img: "https://www.wearetech.africa/media/k2/items/cache/df1514b39ccd2d385fd29e19d91b31c8_XL.jpg",
+    desc: "An agritech mobile app connecting smallholder farmers directly to buyers, with real-time market prices and crop management tools."
+  },
+  {
+    _id: 3,
+    title: "EastAfrica E-Commerce Dashboard",
+    industry: "E-Commerce",
+    img: "https://cdn.dribbble.com/userupload/45960243/file/38e35266d0e67780b6e3f1c6998f38a0.png?resize=752x&vertical=center",
+    desc: "A robust analytics-driven e-commerce platform for a regional retailer, featuring inventory management and sales forecasting."
+  },
+  {
+    _id: 4,
+    title: "ClinicPro Patient Management System",
+    industry: "HealthTech",
+    img: "https://www.spec-india.com/wp-content/uploads/2022/09/Banner-Patient-Management-Analytics-Dashboard-for-Hospitals.png",
+    desc: "A healthcare web application streamlining patient records, appointments, and teleconsultations for clinics across East Africa."
+  },
+  {
+    _id: 5,
+    title: "SwiftLogistics Tracking Platform",
+    industry: "Logistics",
+    img: "https://cdn.shopify.com/s/files/1/0562/1694/4709/files/Live_fleet_dashboard_showing_real-time_vehicle_movements-min_600x600.png?v=1757443283",
+    desc: "Real-time logistics and fleet management dashboard with GPS integration for delivery optimization in urban Tanzania."
+  },
+  {
+    _id: 6,
+    title: "EduLearn Tanzania Platform",
+    industry: "EdTech",
+    img: "https://www.vdocipher.com/blog/wp-content/uploads/2023/05/LMS-banner-image.png",
+    desc: "An edtech learning management system supporting offline access for students in low-connectivity areas."
+  },
+  {
+    _id: 7,
+    title: "CrossBorder Transfer Pro",
+    industry: "FinTech",
+    img: "https://cdn.dribbble.com/userupload/6399908/file/original-1bd0864615e56f1ab92d8c6325966d82.png?format=webp&resize=400x300&vertical=center",
+    desc: "Cross-border mobile money transfer solution with low fees and instant settlements across East Africa."
+  },
+  {
+    _id: 8,
+    title: "DarRealty Property Management",
+    industry: "PropTech",
+    img: "https://cdn.prod.website-files.com/637ac7502ecc7e25ee8a2510/66a95ff4c1c9b6146a914388_646d6c21aeaed43ba51cd43c_US%2520Tablet%2520Dashboard%2520Hero.webp",
+    desc: "Comprehensive real estate software for property listings, tenant management, and automated rent collection."
+  },
+  {
+    _id: 9,
+    title: "DashSwift Merchant Portal",
+    industry: "FinTech",
+    img: "https://akurateco.com/wp-content/uploads/2023/09/img-dashboard-min.jpg",
+    desc: "Custom integration dashboard enabling merchants to track transactions and reconcile payments in real-time."
+  },
+  {
+    _id: 10,
+    title: "FarmYield Predictive Analytics",
+    industry: "AgriTech",
+    img: "https://cropsense.africa/assets/images/cropsense/others/cropsense-mockup.png",
+    desc: "AI-powered agritech tool providing crop yield predictions and soil health insights for cooperative farmers."
+  }
+];

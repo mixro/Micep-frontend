@@ -23,8 +23,8 @@ const About = () => {
 
         <div className="about-item our-mission-section">
             <div className="about-image our-mission">
-                <img src="/assets/About_story-1.jpg" alt="about story image" />
-                <img src="/assets/About_leadership-1.jpg" className='LARGESCREEN' alt="about leadership image" />
+                <img src="/assets/office.png" alt="about story image" />
+                <img src="https://i.pinimg.com/736x/1b/fc/a9/1bfca9c8a3e8cd61aa9aad4af4c0c72e.jpg" className='LARGESCREEN' alt="about leadership image" />
             </div>
 
             <div className="about-desc our-mission-desc">
